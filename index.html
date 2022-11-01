@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Nft</title>
+</head>
+
+<body class="fullPage" ng-app="indexApp" ng-controller="ctrl1">
+    <header>
+        <nav class="navbar">
+            <div class="DashboardItem">
+                <i class="fa-solid fa-z navItemi"></i>
+            </div>
+            <div class="navIcon">
+                <span ng-click="pagenumber='1'" class="navItem" id="1" onclick="navClick(this)">
+                    <i class="fa-solid fa-house navItemi"></i>
+                </span>
+                <span ng-click="pagenumber='2'" class="navItem" id="2" onclick="navClick(this)">
+                    <!-- <a href="#shopPage"></a> -->
+                    <i class="fa-solid fa-cart-shopping navItemi"></i>
+                </span>
+                <span ng-click="pagenumber='3'" class="navItem" id="3" onclick="navClick(this)">
+                    <i class="fa-solid fa-wallet navItemi"></i>
+                </span>
+                <span ng-click="pagenumber='4'" class="navItem" id="4" onclick="navClick(this)">
+                    <i class="fa-regular fa-compass navItemi"></i>
+                </span>
+                <span ng-click="pagenumber='5'" class="navItem" id="5" onclick="navClick(this)">
+                    <i class="fa-solid fa-chart-line navItemi"></i>
+                </span>
+                <span ng-click="pagenumber='6'" class="navItem" id="6" onclick="navClick(this)">
+                    <i class="fa-solid fa-gear navItemi"></i>
+                </span>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="Dashboard" ng-if="pagenumber=='1'">
+        <span class="DashboardTitle">
+            Dashboard
+        </span>
+        <span class="DashboardTitleContent">
+            Buy and Sell order NFT
+        </span>
+
+        <i class="searchIco fa-solid fa-magnifying-glass"></i>
+        <input class="searchBar" type="text" placeholder="Search For Arts">
+
+        <div class="NFtShow">
+            <div class="NFtimg"></div>
+
+            <div class="NFtArtist">
+                <span class="NFtArtistPic"></span>
+                <span class="NftArtistName">
+                    {{NftArtistName}}
+                </span>
+            </div>
+
+            <div class="NftName">
+                {{NftName}}
+            </div>
+            <div class="AucTime">
+                {{AucTime}}
+            </div>
+
+            <div>
+                <!-- ng-repeat="item in AucTimeArray" -->
+
+                <span class="houer AucTimeFont">
+                    <span id="h"></span>
+                    <!-- {{item.houer}} -->
+                </span>
+                <span class="Dot2_1 AucTimeFont">:</span>
+                <span class="minute AucTimeFont">
+                    <span id="m"></span>
+                    <!-- {{item.minute}} -->
+                </span>
+                <span class="Dot2_2 AucTimeFont">:</span>
+                <span class="second AucTimeFont">
+                    <span id="s"></span>
+                    <!-- {{item.second}} -->
+                </span>
+            </div>
+
+            <div class="currentBid">
+                Current Bid
+            </div>
+            <div class="currentBidPrice">
+                {{currentBidPrice}}
+            </div>
+
+            <div ng-click="NftBtnClick()">
+                <span ng-class="btnClicked == true ? 'BtnSelected' : 'NftBtn'" id="priceBtn">
+                    Place a Bid
+                </span>
+                <span ng-class="btnClicked == true ? 'NftBtn' : 'BtnSelected'" id="viewBtn">
+                    View Art
+                </span>
+            </div>
+
+        </div>
+
+
+        <div class="TopArtistBlock">
+            <div class="TopArtistTitr">Top Artists</div>
+            <div ng-repeat="item in TopArtistsInfo" class="TopArtist">
+
+                <span class="TopArtistPic"></span>
+                <span class="TopArtistNames">
+                    {{item.ArtisName}}
+                </span>
+                <span class="TopArtistNfts">
+                    {{item.ArtistsWorks}}
+                </span>
+                <span class="follow">
+                    Follow
+                </span>
+                <hr class="line">
+            </div>
+
+            <div ng-class=" view == true ? 'disNone' : 'disShow'" ng-repeat="item in TopArtistHiden" class="TopArtist">
+
+                <span class="TopArtistPic"></span>
+                <span class="TopArtistNames">
+                    {{item.ArtisName}}
+                </span>
+                <span class="TopArtistNfts">
+                    {{item.ArtistsWorks}}
+                </span>
+                <span class="follow">
+                    Follow
+                </span>
+                <hr class="line">
+            </div>
+
+
+            <div ng-click="viewAll_Less()">
+                <span ng-class="view == true ? 'viewLess' : 'viewAll'">
+                    View Less
+                </span>
+                <span ng-class="view == true ? 'viewAll' : 'viewLess'">
+                    View All
+                </span>
+                <i class="fa-solid fa-arrow-right arrowRight"></i>
+            </div>
+
+        </div>
+
+        <div class="NftCategory">
+            <span class="categoryBtn" id="7" onclick="CatNftBtnClick(this)">
+                <!--class="categoryBtn"  -->
+                Collectibles
+            </span>
+            <span class="categoryBtn" id="8" onclick="CatNftBtnClick(this)">
+                Arts
+            </span>
+            <span class="categoryBtn" id="9" onclick="CatNftBtnClick(this)">
+                Utility
+            </span>
+            <span class="categoryBtn" id="10" onclick="CatNftBtnClick(this)">
+                Sports
+            </span>
+            <span class="categoryBtn" id="11" onclick="CatNftBtnClick(this)">
+                Gaming
+            </span>
+
+            <div ng-click="viewAll()">
+                <span ng-class="view == true ? 'viewAllCategory' : 'disNone'">
+                    View All
+                    <i class="fa-solid fa-arrow-right" style="margin-left:10px ;"></i>
+                </span>
+            </div>
+        </div>
+
+
+        <div class="disFlex">
+            <div ng-repeat="item in othetNFTArray" class="margNo">
+                <figure class="otherNFT">
+                    <img src="{{item.imgSrc}}" alt="" class="imgOthetNFT">
+                    <figcaption class="fig1">Auction</figcaption>
+                    <figcaption class="fig2">{{item.NftsName}}</figcaption>
+                    <figcaption class="fig3">
+                        <!-- <span class="bitcoin"></span> -->
+                        <i class="fa-brands fa-bitcoin bitcoin"></i>
+                        <span class="bitcoinPrice">{{item.priceNft}}</span>
+                    </figcaption>
+                    <figcaption class="fig4" ng-click="NftLikes(item)">
+                        <div ng-class="item.clicked == true ? 'heart' : '' ">
+                            <i class="fa-solid fa-heart heartDiv"></i>
+                        </div>
+
+                        <span>{{item.likes}}</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="shopPage" ng-if="pagenumber=='2'">
+        <span class="DashboardTitle" id="shopPage">
+            shop
+        </span>
+    </section>
+
+
+    <section class="profile">
+        <span class="onlineStatus"></span>
+        <figure ng-repeat="item in profileArray" class="profileFig">
+            <div class="profilePic"></div>
+            <!--<img src="" alt="profilePic" class="profilePic">-->
+            <figcaption class="name profilePicCaption">
+                {{item.name}}
+            </figcaption>
+            <figcaption class="username profilePicCaption">
+                {{item.username}}
+            </figcaption>
+        </figure>
+
+        <div class="icons">
+            <div class="iconsCircle1">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="iconsCircle2">
+                <i class="fa-solid fa-comment "></i>
+            </div>
+            <div class="iconsCircle3">
+                <i class="fa-solid fa-bell "></i>
+            </div>
+        </div>
+
+        <div class="bankCard">
+            <i class="fa-brands fa-bitcoin bitcoin bitcoinBank"></i>
+            <span class="bitBank">Bitcoin</span>
+            <span class="bankNumber">**** **** 9850</span>
+            
+            <span class="yellowCircle"></span>
+            <span class="redCircle"></span>
+            
+            <span class="balance">{{balance}}</span>
+        </div>
+
+        <div class="recentActivity">
+            <h2>
+                Recent Activity
+            </h2>
+            <h5>
+                {{date}}
+                <!-- {{day}} {{month}} {{year}} -->
+            </h5>
+        </div>
+
+        <div ng-repeat="item in recentActivityArray" class="RA">
+
+            <span ng-class="item.circlClass"></span>
+            <span ng-class="item.titreAct1Class">
+                {{item.actName}}
+            </span>
+            <span ng-class="item.ExplainAct1Class">
+                {{item.action}}
+            </span>
+            <span ng-class="item.timeAct1Class">
+                {{item.time}}
+            </span>
+        </div>
+
+    </section>
+
+
+
+
+    <footer></footer>
+
+    <script src="javaScripts/angular.min.js"></script>
+    <script src="javaScripts/all.js"></script>
+    <script src="javaScripts/index.js"></script>
+</body>
+
+</html>

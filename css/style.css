@@ -1,0 +1,1398 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+.fullPage {
+    background: #0F0F0F;
+    /* display: flex; */
+    /* flex-direction:row; */
+    /* border-radius: 32px; */
+}
+
+/* ****************************************** NavBar Section *************************** */
+header {
+    display: inline;
+}
+
+.navbar {
+    /* width: 125px; */
+    width: 10%;
+    box-sizing: border-box;
+
+}
+
+.DashboardItem {
+    /* width: 64px;
+    height: 64px; */
+    width: 4.2vw;
+    height: 4.2vw;
+
+    margin-top: 40%;
+    margin-left: 25%;
+
+    /* margin-top: 56px;
+    margin-left: 32px; */
+
+    border-radius: 50%;
+    background: linear-gradient(297.77deg, #6620DC 15.57%, #3D64CE 102.73%);
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FBF9FF;
+}
+
+.navIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    margin-top: 48%;
+    /*80px; */
+
+}
+
+.navItem {
+    box-sizing: border-box;
+
+    width: 4.2vw;
+    height: 4.2vw;
+
+    margin: 13% 0% 0% 0%;
+    /* padding: 20% 0%; */
+    /*31% == 44px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #6A6A6A;
+}
+
+.navItemi {
+    /* width: 26.67px;
+    height: 26.22px; */
+
+    width: 1.5vw;
+    height: 1.5vw;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.navItem:hover {
+    color: #6121C4;
+
+    /* width: 64px;
+    height: 64px; */
+    width: 4.2vw;
+    height: 4.2vw;
+
+    background: linear-gradient(180deg, #242424 -28.47%, #111111 75.69%);
+    border-radius: 24px;
+}
+
+.navItemSelect {
+    color: #6121C4;
+
+    width: 4.2vw;
+    height: 4.2vw;
+
+    background: linear-gradient(180deg, #242424 -28.47%, #111111 75.69%);
+    border-radius: 24px;
+}
+
+/* ****************************************** Dashboard Section *************************** */
+.Dashboard {
+    width: 952px;
+    /* height: 928px; */
+}
+
+.DashboardTitle {
+    position: absolute;
+
+    /* margin: -650px 0px 0px 168px;  top 56px; */
+    margin-top: -42.5%;
+    margin-left: 10%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vw;
+    /* 36px */
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+
+.DashboardTitleContent {
+    position: absolute;
+
+    margin-top: -40.5%;
+    margin-left: 10%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.8vw;
+    /* 36px */
+    line-height: 42px;
+
+    color: #6B6B6B;
+}
+
+.searchIco {
+    position: absolute;
+    margin: -40.8% 5% 0% 51%;
+
+    z-index: 2;
+    color: #686868;
+}
+
+.searchBar {
+    /* width: 320px;
+    height: 56px; */
+    width: 20vw;
+    height: 4vw;
+
+    position: absolute;
+    margin: -42.5% 15% 0% 50%;
+
+    text-align: left;
+    padding-left: 35px;
+    /* direction: ltr; */
+
+    background: #151515;
+    border: 2px solid #1F1F1F;
+    /* 0.1vw*/
+    border-radius: 32px;
+    /*   2vw*/
+    color: #FFFFFF;
+}
+
+.NFtShow {
+    width: 38vw;
+    /*576px */
+    height: 23vw;
+    /* 344px*/
+
+    position: absolute;
+    margin-top: -37%;
+    margin-left: 10%;
+    /* margin: -37% 0% 0% 10%; */
+
+    background: #151515;
+    border: 2px solid #202020;
+    border-radius: 32px;
+}
+
+.NFtimg {
+    width: 15vw;
+    /*256px */
+    height: 19vw;
+    /*296px */
+
+    position: absolute;
+    margin: 5% 0% 0% 5%;
+
+    border-radius: 25px;
+    background: url(../images/nft1.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.NFtArtist {
+    /* width: 136px;
+    height: 32px; */
+    width: 8.5vw;
+    height: 2vw;
+
+    position: absolute;
+    margin: 5% 0% 0% 51%;
+
+    background: #232323;
+    border-radius: 32px;
+}
+
+.NFtArtistPic {
+    /* width: 24px;
+    height: 24px; */
+    width: 1.5vw;
+    height: 1.5vw;
+
+
+    position: absolute;
+    margin: 2.5% 0% 2% 3%;
+
+    border-radius: 50%;
+    background: linear-gradient(0deg, #242424 -6.25%, #1B1B1B 100%);
+}
+
+.NftArtistName {
+    /* width: 80px;
+    height: 16px; */
+
+    position: absolute;
+    margin: 5% 0% 2% 28%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8vw;
+    /* 12px*/
+    line-height: 14px;
+
+    color: #8E8D91;
+}
+
+.NftName {
+    position: absolute;
+    margin: 12% 0% 0% 51%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3vw;
+    /* 18px*/
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #F0F0F0;
+}
+
+.AucTime {
+    position: absolute;
+    margin: 19% 0% 0% 51%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8vw;
+    /* 12px */
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+
+    color: #77787A;
+}
+
+.houer {
+    /* width: 32px;
+    height: 32px; */
+    width: 2.2vw;
+    height: 2.2vw;
+
+    position: absolute;
+    margin: 23.5% 0% 0% 51%;
+
+    background: linear-gradient(180deg, #242424 0%, #1F1F1F 52.08%, #1A1A1A 100%);
+    border-radius: 8px;
+}
+
+.AucTimeFont {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8vw;
+    /* 12px*/
+    line-height: 14px;
+
+    color: #C0C0C0;
+}
+
+.Dot2_1 {
+    /* width: 8px;
+    height: 16px; */
+
+    position: absolute;
+    margin: 25% 0% 0% 58%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1vw;
+    /* 12px*/
+    line-height: 14px;
+
+    color: #C0C0C0;
+}
+
+.Dot2_2 {
+    position: absolute;
+    margin: 25% 0% 0% 68.5%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1vw;
+    /* 12px*/
+    line-height: 14px;
+
+    color: #C0C0C0;
+}
+
+.minute {
+    width: 2.2vw;
+    height: 2.2vw;
+
+    position: absolute;
+    margin: 23.5% 0% 0% 61%;
+
+    background: linear-gradient(180deg, #242424 0%, #1F1F1F 52.08%, #1A1A1A 100%);
+    border-radius: 8px;
+}
+
+.second {
+    width: 2.2vw;
+    height: 2.2vw;
+
+    position: absolute;
+    margin: 23.5% 0% 0% 71%;
+
+    background: linear-gradient(180deg, #242424 0%, #1F1F1F 52.08%, #1A1A1A 100%);
+    border-radius: 8px;
+}
+
+.currentBid {
+    width: 64px;
+    height: 16px;
+
+    position: absolute;
+    margin: 34% 0% 0% 51%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.7vw;
+    /* 12px*/
+    line-height: 14px;
+
+    color: #77787A;
+}
+
+.currentBidPrice {
+    width: 136px;
+    height: 24px;
+
+    position: absolute;
+    margin: 39% 0% 0% 49%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3vw;
+    /* 12px*/
+    line-height: 14px;
+    color: #F0F0F0;
+}
+
+.NftBtn {
+    /* width: 112px;
+    height: 40px; */
+    width: 7.5vw;
+    height: 2.5vw;
+
+    position: absolute;
+
+    /* background: linear-gradient(270deg, #54279E 25.23%, #4797D1 125.09%); */
+    border: 2px solid #4E3694;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    /*14px*/
+    line-height: 16px;
+
+    color: #CACACA;
+
+}
+
+#priceBtn {
+    margin: 47% 0% 0% 49%;
+}
+
+#viewBtn {
+    margin: 47% 0% 0% 75%;
+}
+
+.NftBtn:hover {
+    background: linear-gradient(270deg, #54279E 25.23%, #4797D1 125.09%);
+    border: 2px solid #4E3694;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.BtnSelected {
+    width: 7.5vw;
+    height: 2.5vw;
+
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    /*14px*/
+    line-height: 16px;
+
+    color: #CACACA;
+
+    border-radius: 32px;
+    background: linear-gradient(270deg, #54279E 25.23%, #4797D1 125.09%);
+    border: 2px solid #4E3694;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.TopArtistBlock {
+    width: 22vw;
+    /*576px */
+    height: 23vw;
+    /* 344px*/
+
+    position: absolute;
+    margin: -37% 0% 0% 50%;
+
+    background: #151515;
+    border: 2px solid #202020;
+    border-radius: 32px;
+}
+
+.TopArtistTitr {
+    position: absolute;
+    margin: 8% 0% 0% 10%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #F3F3F3;
+}
+
+.TopArtist {
+    display: block;
+    padding: 10% 1%;
+    /* overflow: visible; */
+}
+
+.TopArtistPic {
+    /* width: 48px;
+    height: 48px; */
+    width: 3vw;
+    height: 3vw;
+
+    position: absolute;
+    margin: 12% 0% 0% 5%;
+
+    border-radius: 50%;
+    background: linear-gradient(170.7deg, #242424 2.98%, #1B1B1B 75.78%);
+}
+
+.TopArtistNames {
+    display: flex;
+    align-items: center;
+
+    /* width: 80px;
+    height: 16px; */
+
+    position: absolute;
+    margin: 12% 0% 0% 20%;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vw;
+    /*14px */
+    line-height: 16px;
+
+
+    color: #CACACA;
+}
+
+.TopArtistNfts {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    margin: 18% 0% 0% 20%;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7vw;
+    /*12px */
+    line-height: 16px;
+
+    color: #656565;
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    position: absolute;
+    margin: 18% 0% 0% 75%;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vw;
+    /*13px */
+    line-height: 16px;
+
+    background: linear-gradient(270deg, #54269E 8.87%, #4B72C0 92.06%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+}
+
+.line {
+    /* width: 192px; */
+    width: 12vw;
+    height: 0px;
+
+    position: absolute;
+    margin: 28% 0% 0% 20%;
+
+    background: linear-gradient(270deg, #151515 -21.88%, #1E1E1E 49.79%, #151515 113.54%);
+    /* border: 2px solid; */
+
+    /* border-image-source: linear-gradient(270deg, #151515 -21.88%, #1E1E1E 49.79%, #151515 113.54%); */
+
+}
+
+.viewAll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: absolute;
+    margin: 30% 40%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.95vw;
+    /*12px */
+    line-height: 16px;
+
+    color: #656565;
+    cursor: pointer;
+}
+
+.arrowRight {
+    display: flex;
+    float: right;
+
+    position: absolute;
+    margin: 30% 60%;
+
+    color: #656565;
+    cursor: pointer;
+}
+
+.disShow {
+    display: block;
+}
+
+.disNone {
+    display: none;
+}
+
+.TopArtistBlockExpand {
+    height: 48vw;
+}
+
+.viewLess {
+    display: none;
+    /* align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: absolute;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    /*12px */
+    /*line-height: 16px;
+
+    color: #656565;
+    cursor: pointer; */
+}
+
+.NftCategory {
+    display: flex;
+    align-items: center;
+    margin-left: 16%;
+    margin-top: 0%;
+    /* padding: 5%; */
+    /* margin: 10% 0%; */
+}
+
+.categoryBtn {
+    box-sizing: border-box;
+    padding: 1.5%;
+    /* width: 64px;
+    height: 40px; */
+
+    position: relative;
+    margin-top: -25%;
+    margin-left: 1%;
+    /* margin-left: 16%; */
+    /* margin: -20% 1% 15% 1%; */
+
+    background: #0F0F0F;
+    border: 2px solid #424242;
+    border-radius: 32px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+    /*14px*/
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #C1BCEF;
+
+
+}
+
+.categoryBtn:hover {
+    cursor: pointer;
+    background: linear-gradient(270deg, #54279E 25.23%, #4797D1 125.09%);
+    border: 2px solid #4E3694;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.categoryBtnSelected {
+    box-sizing: border-box;
+    padding: 1.5%;
+
+    position: relative;
+    margin-top: -25%;
+    margin-left: 1%;
+
+    border-radius: 32px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #C1BCEF;
+    background: linear-gradient(270deg, #54279E 25.23%, #4797D1 125.09%);
+    border: 2px solid #4E3694;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.viewAllCategory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: absolute;
+    margin-top: -7%;
+    margin-left: 25%;
+    /* margin: -10% 1% 15% 65%; */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    /*12px */
+    line-height: 16px;
+
+    color: #656565;
+    cursor: pointer;
+}
+
+.disFlex {
+    display: flex !important;
+    margin-left: 14%;
+
+}
+
+.margNo {
+    margin-left: -6% !important;
+    margin-top: -4%;
+}
+
+.otherNFT {
+    display: flex;
+
+    /* width: 208px; */
+    /* height: 320px; */
+    width: 14vw;
+    height: 20vw;
+
+    /* position: absolute; */
+    /* margin: 0% 12%; */
+    /* padding: 20%; */
+
+
+    background: #151515;
+    border: 2px solid #232323;
+    border-radius: 32px;
+}
+
+.imgOthetNFT {
+    /* width: 176px;
+    height: 200px; */
+
+    width: 12vw;
+    height: 13vw;
+
+    /* position: absolute; */
+    /* margin: 16px 16px 0px 16px; */
+    margin: 7%;
+
+    border-radius: 17px;
+}
+
+.fig1 {
+    position: absolute;
+    /* margin: 224px 144px 80px 24px; */
+    margin: 14.5% 1%;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7vw;
+    /* 11px*/
+    line-height: 13px;
+
+    display: flex;
+    align-items: center;
+
+    color: #656565;
+}
+
+.fig2 {
+    position: absolute;
+    /* margin: 240px 48px 64px 24px; */
+    margin: 16% 1%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    /*18px*/
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #DEDEDE;
+}
+
+.fig3 {
+    display: flex;
+    /* margin: 272px 24px 24px -185px; */
+    margin: 126% 0% 0% -94%;
+
+}
+
+.bitcoin {
+    /* height: 24px;
+    width: 24px; */
+    width: 1.6vw;
+    height: 1.6vw;
+
+    border-radius: 50%;
+
+    position: absolute;
+    /* margin: 272px 160px 24px 24px; */
+    background: #DEDEDE;
+    color: #FF9900;
+}
+
+.bitcoinPrice {
+    position: absolute;
+    margin-top: 0.12%;
+    /*3px*/
+    margin-left: 2%;
+    /*30spx*/
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vw;
+    /*14px*/
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #C0C0C0;
+}
+
+.fig4 {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    /* margin: 278px 0px 24px 164px; */
+    margin: 18% 0% 0% 11%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8vw;
+    /*13px*/
+    line-height: 15px;
+
+    color: #C0C0C0;
+}
+
+.heart {
+    font-size: 1vw;
+    color: red;
+    /* margin-right: 3%; */
+}
+
+.heartDiv {
+    font-size: 1vw;
+    margin-right: 5px;
+}
+
+/* .NftLikes {} */
+
+
+/* ********************************* Shop Section ******************************** */
+
+.shopPage {
+    /* display: none; */
+    width: 952px;
+}
+
+/* ****************************************** Profile Section *************************** */
+.profile {
+    width: 23%;
+    /*344px*/
+    float: right;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    margin-top: 4%;
+    /*-42%*/
+    /*top: 48px; */
+    margin-right: 1.5%;
+
+    background: #151515;
+    border: 2px solid #1F1F1F;
+    border-radius: 32px;
+}
+
+.onlineStatus {
+    width: 0.8vw;
+    height: 0.8vw;
+
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 52%;
+    z-index: 1;
+
+    border-radius: 50%;
+    background: #63B52A;
+}
+
+.profileFig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.profilePic {
+    /* width: 64px;
+    height: 64px; */
+    width: 4.2vw;
+    height: 4.2vw;
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+    border-radius: 50%;
+    background: linear-gradient(170.7deg, #242424 2.98%, #1B1B1B 75.78%);
+}
+
+.profilePicCaption {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    padding: 3% 0% 0% 0%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4vw;
+    line-height: 1.5vw;
+
+    color: #FBFBFB;
+}
+
+.name {
+    width: 120px;
+    height: 24px;
+
+    /* margin: 0px 112px; */
+}
+
+.username {
+    /* width: 152px;
+    height: 16px;
+     */
+    font-size: 1vw;
+    /*14px*/
+    line-height: 1vw;
+
+    color: #5B5B5B;
+    text-decoration-line: underline;
+}
+
+.icons {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    margin: 8% 0px;
+}
+
+.iconsCircle1 {
+    width: 3.5vw;
+    /* 56px */
+    height: 3.5vw;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0% 2%;
+
+    color: #676767;
+    font-size: 1.5vw;
+    border-radius: 50%;
+    background: linear-gradient(170.7deg, #242424 2.98%, #1B1B1B 75.78%);
+
+}
+
+.iconsCircle1:hover {
+    background: linear-gradient(170.7deg, #4B6DBD 2.98%, #53279E 75.78%);
+    color: red;
+}
+
+.iconsCircle2 {
+    width: 3.5vw;
+    /* 56px */
+    height: 3.5vw;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0% 2%;
+
+    color: #676767;
+    font-size: 1.5vw;
+    border-radius: 50%;
+    background: linear-gradient(170.7deg, #242424 2.98%, #1B1B1B 75.78%);
+
+}
+
+.iconsCircle2:hover {
+    background: linear-gradient(170.7deg, #4B6DBD 2.98%, #53279E 75.78%);
+    color: #B8B8B8;
+}
+
+.iconsCircle3 {
+    width: 3.5vw;
+    /* 56px */
+    height: 3.5vw;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0% 2%;
+
+    color: #676767;
+    font-size: 1.5vw;
+    border-radius: 50%;
+    background: linear-gradient(170.7deg, #242424 2.98%, #1B1B1B 75.78%);
+
+}
+
+.iconsCircle3:hover {
+    background: linear-gradient(170.7deg, #4B6DBD 2.98%, #53279E 75.78%);
+    color: #F79F1B;
+}
+
+.bankCard {
+    height: 11vw;
+    /* 176px;*/
+    width: 19vw;
+    /* 296px;*/
+    margin: 1% 6% 0% 8%;
+
+    background: #252525;
+    border-radius: 32px;
+}
+
+.bitcoinBank {
+    margin: 5% 0% 0% 5%;
+}
+
+.bitBank {
+    position: absolute;
+    margin: 20% 0% 0% 5%;
+    /* height: 16px;
+    left: 1112px;
+    right: 280px;
+    top: calc(50% - 16px/2 - 64px); */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #C8C8C8;
+}
+
+.bankNumber {
+    position: absolute;
+    margin: 5% 0% 0% 55%;
+    /* height: 16px;
+    left: 1280px;
+    right: 72px;
+    top: calc(50% - 16px/2 - 128px); */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vw;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #BDBDBD;
+}
+
+.yellowCircle {
+    width: 1.4vw;
+    height: 1.4vw;
+
+    position: absolute;
+    margin: 38% 0% 0% 70%;
+    z-index: 2;
+
+    border-radius: 50%;
+    background: linear-gradient(270deg, #F79F1B 25.85%, rgba(247, 159, 27, 0.45) 109.51%);
+}
+
+.redCircle {
+    width: 1.4vw;
+    height: 1.4vw;
+
+    position: absolute;
+    margin: 38% 0% 0% 66%;
+    z-index: 1;
+
+    border-radius: 50%;
+    background: #EC001B;
+}
+
+.balance {
+    position: absolute;
+    margin: 38% 0% 0% 5%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #F4F4F4;
+}
+
+.recentActivity {
+    margin: 1% 8%;
+    color: #F8F8F8;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.recentActivity h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.recentActivity h5 {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* ***************************************** Recent Activity Part *************************/
+.RA {
+    margin: 10% 0%;
+}
+
+.CircleActivity1 {
+    /* width: 48px;
+    height: 48px; */
+
+    width: 3vw;
+    height: 3vw;
+
+    position: absolute;
+    margin-left: 2%;
+
+    border-radius: 50%;
+    background: #2D75BC;
+}
+
+.titreAct1 {
+    width: 152px;
+    height: 16px;
+
+    padding: 1% 0% 0% 28%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #DEDEDE;
+}
+
+.ExplainAct1 {
+    width: 152px;
+    height: 16px;
+
+    padding: 1% 0% 0% 28%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.05vw;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #6A6A6A;
+}
+
+.timeAct1 {
+    width: 72px;
+    height: 16px;
+
+    padding: 1% 0% 0% 28%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vw;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+
+    color: #6A6A6A;
+}
+
+.CircleActivity2 {
+    width: 3vw;
+    height: 3vw;
+
+    position: absolute;
+    margin-left: 2%;
+
+    border-radius: 50%;
+    background: #4C1EBB;
+}
+
+.titreAct2 {
+    width: 152px;
+    height: 16px;
+
+    padding: 1% 0% 0% 28%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #DEDEDE;
+}
+
+.ExplainAct2 {
+    width: 152px;
+    height: 16px;
+
+    padding: 1% 0% 0% 28%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.05vw;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #6A6A6A;
+}
+
+.timeAct2 {
+    width: 72px;
+    height: 16px;
+
+    padding: 1% 0% 0% 28%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vw;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+
+    color: #6A6A6A;
+}
+
+.CircleActivity3 {
+    width: 3vw;
+    height: 3vw;
+
+    position: absolute;
+    margin-left: 2%;
+
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, #8B31E3 0%, #6425BE 100%);
+}
+
+.titreAct3 {
+    width: 152px;
+    height: 16px;
+
+    padding: 1% 0% 0% 28%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #DEDEDE;
+}
+
+.ExplainAct3 {
+    width: 152px;
+    height: 16px;
+
+    padding: 1% 0% 0% 28%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.05vw;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #6A6A6A;
+}
+
+.timeAct3 {
+    width: 72px;
+    height: 16px;
+
+    padding: 1% 0% 0% 28%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vw;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+
+    color: #6A6A6A;
+}
